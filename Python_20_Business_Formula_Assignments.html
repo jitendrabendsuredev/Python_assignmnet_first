@@ -1,0 +1,213 @@
+<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Python Beginner Business Formula Assignments</title>
+<style>
+*{box-sizing:border-box}body{margin:0;font-family:Segoe UI,Arial;background:#f6f8fc;color:#172033;line-height:1.6}header{padding:65px 6%;text-align:center;background:linear-gradient(135deg,#eff6ff,#f5f3ff)}header h1{font-size:clamp(42px,6vw,70px);margin:0}header p{font-size:22px;color:#5f6b7a}main{max-width:1100px;margin:auto;padding:30px 5% 70px}.intro,.task{background:#fff;border:1px solid #dbe3f0;border-radius:22px;padding:30px;margin:23px 0;box-shadow:0 10px 30px #1720330d}h2{font-size:31px;margin:6px 0}p{font-size:20px}.n{font-weight:800;color:#7c3aed}.formula{background:#ecfdf5;border-left:5px solid #059669;padding:15px;margin:16px 0;border-radius:10px;font-size:20px}.rule{background:#fff7ed;border-left:5px solid #ea580c;padding:13px;margin:15px 0;border-radius:9px;font-size:18px}button{background:#2563eb;color:white;border:0;padding:11px 18px;border-radius:10px;font-size:17px;font-weight:800;cursor:pointer}.sol{display:none;margin-top:15px}pre{background:#0f172a;color:#e2e8f0;padding:22px;border-radius:14px;overflow:auto;font-size:18px;line-height:1.55}code{font-family:Consolas,monospace}.badge{display:inline-block;background:#dbeafe;color:#1d4ed8;padding:8px 15px;border-radius:999px;font-weight:800}footer{text-align:center;padding:30px;color:#667085}
+</style></head><body><header><span class="badge">Python Session 01 Practice</span><h1>20 Business Formula Challenges</h1><p>Input + Print + Variables + Arithmetic • Hidden Solutions</p></header><main>
+<section class="intro"><h2>Now Make It Interesting 🚀</h2><p>Each problem has a real-world scenario and a formula. Students first understand the formula, take values using <code>input()</code>, calculate the result and display it using <code>print()</code>.</p><div class="rule"><b>No conditions, loops or functions yet.</b> The focus is Input → Formula → Calculation → Output.</div></section>
+<section class="task">
+<div class="n">Assignment 01</div><h2>Smart Shop Bill</h2>
+<p><b>Business Problem:</b> Take product name, price and quantity. Calculate total bill.</p>
+<div class="formula"><b>Formula / Logic:</b> Total = Price × Quantity</div>
+<div class="rule">Allowed: <code>input()</code>, <code>print()</code>, variables, <code>int()</code>, <code>float()</code> and arithmetic operators. No if-else, loops or functions.</div>
+<button onclick="toggle(this)">Show Solution</button><div class="sol"><pre><code>product = input("Enter product name: ")
+price = float(input("Enter price: "))
+quantity = int(input("Enter quantity: "))
+total = price * quantity
+print("Product:", product)
+print("Total Bill: ₹", total)</code></pre></div>
+</section><section class="task">
+<div class="n">Assignment 02</div><h2>Restaurant GST Bill</h2>
+<p><b>Business Problem:</b> Take food bill amount and calculate 5% GST and final bill.</p>
+<div class="formula"><b>Formula / Logic:</b> GST = Bill × 5 / 100; Final = Bill + GST</div>
+<div class="rule">Allowed: <code>input()</code>, <code>print()</code>, variables, <code>int()</code>, <code>float()</code> and arithmetic operators. No if-else, loops or functions.</div>
+<button onclick="toggle(this)">Show Solution</button><div class="sol"><pre><code>bill = float(input("Enter food bill: "))
+gst = bill * 5 / 100
+final_bill = bill + gst
+print("GST: ₹", gst)
+print("Final Bill: ₹", final_bill)</code></pre></div>
+</section><section class="task">
+<div class="n">Assignment 03</div><h2>Employee Salary Calculator</h2>
+<p><b>Business Problem:</b> Take basic salary. Calculate HRA as 20% and final salary.</p>
+<div class="formula"><b>Formula / Logic:</b> HRA = Basic × 20 / 100; Salary = Basic + HRA</div>
+<div class="rule">Allowed: <code>input()</code>, <code>print()</code>, variables, <code>int()</code>, <code>float()</code> and arithmetic operators. No if-else, loops or functions.</div>
+<button onclick="toggle(this)">Show Solution</button><div class="sol"><pre><code>basic = float(input("Enter basic salary: "))
+hra = basic * 20 / 100
+salary = basic + hra
+print("HRA: ₹", hra)
+print("Final Salary: ₹", salary)</code></pre></div>
+</section><section class="task">
+<div class="n">Assignment 04</div><h2>Student Result Summary</h2>
+<p><b>Business Problem:</b> Take marks of 3 subjects. Calculate total and average.</p>
+<div class="formula"><b>Formula / Logic:</b> Total = M1 + M2 + M3; Average = Total / 3</div>
+<div class="rule">Allowed: <code>input()</code>, <code>print()</code>, variables, <code>int()</code>, <code>float()</code> and arithmetic operators. No if-else, loops or functions.</div>
+<button onclick="toggle(this)">Show Solution</button><div class="sol"><pre><code>m1 = float(input("Enter Subject 1 marks: "))
+m2 = float(input("Enter Subject 2 marks: "))
+m3 = float(input("Enter Subject 3 marks: "))
+total = m1 + m2 + m3
+average = total / 3
+print("Total:", total)
+print("Average:", average)</code></pre></div>
+</section><section class="task">
+<div class="n">Assignment 05</div><h2>Simple Interest Calculator</h2>
+<p><b>Business Problem:</b> Take principal, rate and time and calculate simple interest.</p>
+<div class="formula"><b>Formula / Logic:</b> SI = (P × R × T) / 100</div>
+<div class="rule">Allowed: <code>input()</code>, <code>print()</code>, variables, <code>int()</code>, <code>float()</code> and arithmetic operators. No if-else, loops or functions.</div>
+<button onclick="toggle(this)">Show Solution</button><div class="sol"><pre><code>p = float(input("Enter principal amount: "))
+r = float(input("Enter annual rate: "))
+t = float(input("Enter time in years: "))
+si = (p * r * t) / 100
+print("Simple Interest: ₹", si)
+print("Total Amount: ₹", p + si)</code></pre></div>
+</section><section class="task">
+<div class="n">Assignment 06</div><h2>Discount Calculator</h2>
+<p><b>Business Problem:</b> Take product price and discount percentage. Calculate discount and final price.</p>
+<div class="formula"><b>Formula / Logic:</b> Discount = Price × Rate / 100; Final = Price − Discount</div>
+<div class="rule">Allowed: <code>input()</code>, <code>print()</code>, variables, <code>int()</code>, <code>float()</code> and arithmetic operators. No if-else, loops or functions.</div>
+<button onclick="toggle(this)">Show Solution</button><div class="sol"><pre><code>price = float(input("Enter product price: "))
+rate = float(input("Enter discount %: "))
+discount = price * rate / 100
+final_price = price - discount
+print("Discount: ₹", discount)
+print("Final Price: ₹", final_price)</code></pre></div>
+</section><section class="task">
+<div class="n">Assignment 07</div><h2>Rectangle Flooring Cost</h2>
+<p><b>Business Problem:</b> Take room length, width and flooring cost per sq. unit.</p>
+<div class="formula"><b>Formula / Logic:</b> Area = Length × Width; Cost = Area × Rate</div>
+<div class="rule">Allowed: <code>input()</code>, <code>print()</code>, variables, <code>int()</code>, <code>float()</code> and arithmetic operators. No if-else, loops or functions.</div>
+<button onclick="toggle(this)">Show Solution</button><div class="sol"><pre><code>length = float(input("Enter room length: "))
+width = float(input("Enter room width: "))
+rate = float(input("Enter flooring cost per sq. unit: "))
+area = length * width
+cost = area * rate
+print("Area:", area)
+print("Flooring Cost: ₹", cost)</code></pre></div>
+</section><section class="task">
+<div class="n">Assignment 08</div><h2>Circle Area Calculator</h2>
+<p><b>Business Problem:</b> Take radius and calculate area of a circle.</p>
+<div class="formula"><b>Formula / Logic:</b> Area = 3.14159 × r²</div>
+<div class="rule">Allowed: <code>input()</code>, <code>print()</code>, variables, <code>int()</code>, <code>float()</code> and arithmetic operators. No if-else, loops or functions.</div>
+<button onclick="toggle(this)">Show Solution</button><div class="sol"><pre><code>radius = float(input("Enter radius: "))
+area = 3.14159 * radius ** 2
+print("Circle Area:", area)</code></pre></div>
+</section><section class="task">
+<div class="n">Assignment 09</div><h2>Temperature Converter</h2>
+<p><b>Business Problem:</b> Take Celsius temperature and convert it to Fahrenheit.</p>
+<div class="formula"><b>Formula / Logic:</b> F = (C × 9/5) + 32</div>
+<div class="rule">Allowed: <code>input()</code>, <code>print()</code>, variables, <code>int()</code>, <code>float()</code> and arithmetic operators. No if-else, loops or functions.</div>
+<button onclick="toggle(this)">Show Solution</button><div class="sol"><pre><code>c = float(input("Enter Celsius temperature: "))
+f = (c * 9 / 5) + 32
+print("Fahrenheit:", f)</code></pre></div>
+</section><section class="task">
+<div class="n">Assignment 10</div><h2>Travel Fuel Cost</h2>
+<p><b>Business Problem:</b> Take distance, mileage and petrol price. Estimate fuel and trip cost.</p>
+<div class="formula"><b>Formula / Logic:</b> Fuel = Distance / Mileage; Cost = Fuel × Petrol Price</div>
+<div class="rule">Allowed: <code>input()</code>, <code>print()</code>, variables, <code>int()</code>, <code>float()</code> and arithmetic operators. No if-else, loops or functions.</div>
+<button onclick="toggle(this)">Show Solution</button><div class="sol"><pre><code>distance = float(input("Enter distance in km: "))
+mileage = float(input("Enter vehicle mileage (km/l): "))
+price = float(input("Enter petrol price per litre: "))
+fuel = distance / mileage
+cost = fuel * price
+print("Fuel Required:", fuel, "litres")
+print("Estimated Fuel Cost: ₹", cost)</code></pre></div>
+</section><section class="task">
+<div class="n">Assignment 11</div><h2>Daily Wage Calculator</h2>
+<p><b>Business Problem:</b> Take working days and wage per day. Calculate monthly earning.</p>
+<div class="formula"><b>Formula / Logic:</b> Earning = Working Days × Wage Per Day</div>
+<div class="rule">Allowed: <code>input()</code>, <code>print()</code>, variables, <code>int()</code>, <code>float()</code> and arithmetic operators. No if-else, loops or functions.</div>
+<button onclick="toggle(this)">Show Solution</button><div class="sol"><pre><code>days = int(input("Enter working days: "))
+wage = float(input("Enter wage per day: "))
+earning = days * wage
+print("Monthly Earning: ₹", earning)</code></pre></div>
+</section><section class="task">
+<div class="n">Assignment 12</div><h2>Electricity Bill Practice</h2>
+<p><b>Business Problem:</b> Take units consumed and a fixed rate per unit. Calculate bill.</p>
+<div class="formula"><b>Formula / Logic:</b> Bill = Units × Rate</div>
+<div class="rule">Allowed: <code>input()</code>, <code>print()</code>, variables, <code>int()</code>, <code>float()</code> and arithmetic operators. No if-else, loops or functions.</div>
+<button onclick="toggle(this)">Show Solution</button><div class="sol"><pre><code>units = float(input("Enter units consumed: "))
+rate = float(input("Enter rate per unit: "))
+bill = units * rate
+print("Electricity Bill: ₹", bill)</code></pre></div>
+</section><section class="task">
+<div class="n">Assignment 13</div><h2>BMI Calculator</h2>
+<p><b>Business Problem:</b> Take weight in kg and height in metres. Calculate BMI.</p>
+<div class="formula"><b>Formula / Logic:</b> BMI = Weight / Height²</div>
+<div class="rule">Allowed: <code>input()</code>, <code>print()</code>, variables, <code>int()</code>, <code>float()</code> and arithmetic operators. No if-else, loops or functions.</div>
+<button onclick="toggle(this)">Show Solution</button><div class="sol"><pre><code>weight = float(input("Enter weight in kg: "))
+height = float(input("Enter height in metres: "))
+bmi = weight / (height ** 2)
+print("BMI:", bmi)</code></pre></div>
+</section><section class="task">
+<div class="n">Assignment 14</div><h2>Speed Calculator</h2>
+<p><b>Business Problem:</b> Take distance and time and calculate average speed.</p>
+<div class="formula"><b>Formula / Logic:</b> Speed = Distance / Time</div>
+<div class="rule">Allowed: <code>input()</code>, <code>print()</code>, variables, <code>int()</code>, <code>float()</code> and arithmetic operators. No if-else, loops or functions.</div>
+<button onclick="toggle(this)">Show Solution</button><div class="sol"><pre><code>distance = float(input("Enter distance in km: "))
+time = float(input("Enter time in hours: "))
+speed = distance / time
+print("Average Speed:", speed, "km/h")</code></pre></div>
+</section><section class="task">
+<div class="n">Assignment 15</div><h2>Currency Conversion Practice</h2>
+<p><b>Business Problem:</b> Take INR amount and an exchange rate entered by the user.</p>
+<div class="formula"><b>Formula / Logic:</b> Converted Amount = INR / INR-per-unit Rate</div>
+<div class="rule">Allowed: <code>input()</code>, <code>print()</code>, variables, <code>int()</code>, <code>float()</code> and arithmetic operators. No if-else, loops or functions.</div>
+<button onclick="toggle(this)">Show Solution</button><div class="sol"><pre><code>inr = float(input("Enter amount in INR: "))
+rate = float(input("Enter INR required for 1 foreign currency unit: "))
+converted = inr / rate
+print("Converted Amount:", converted)</code></pre></div>
+</section><section class="task">
+<div class="n">Assignment 16</div><h2>E-commerce Order Total</h2>
+<p><b>Business Problem:</b> Take item price, quantity and delivery charge.</p>
+<div class="formula"><b>Formula / Logic:</b> Subtotal = Price × Qty; Final = Subtotal + Delivery</div>
+<div class="rule">Allowed: <code>input()</code>, <code>print()</code>, variables, <code>int()</code>, <code>float()</code> and arithmetic operators. No if-else, loops or functions.</div>
+<button onclick="toggle(this)">Show Solution</button><div class="sol"><pre><code>price = float(input("Enter item price: "))
+qty = int(input("Enter quantity: "))
+delivery = float(input("Enter delivery charge: "))
+subtotal = price * qty
+final = subtotal + delivery
+print("Subtotal: ₹", subtotal)
+print("Final Order Total: ₹", final)</code></pre></div>
+</section><section class="task">
+<div class="n">Assignment 17</div><h2>Profit Calculator</h2>
+<p><b>Business Problem:</b> Take buying price and selling price. Calculate profit amount.</p>
+<div class="formula"><b>Formula / Logic:</b> Profit = Selling Price − Cost Price</div>
+<div class="rule">Allowed: <code>input()</code>, <code>print()</code>, variables, <code>int()</code>, <code>float()</code> and arithmetic operators. No if-else, loops or functions.</div>
+<button onclick="toggle(this)">Show Solution</button><div class="sol"><pre><code>cost = float(input("Enter cost price: "))
+selling = float(input("Enter selling price: "))
+profit = selling - cost
+print("Profit Amount: ₹", profit)</code></pre></div>
+</section><section class="task">
+<div class="n">Assignment 18</div><h2>Profit Percentage</h2>
+<p><b>Business Problem:</b> Take cost price and selling price. Calculate profit percentage.</p>
+<div class="formula"><b>Formula / Logic:</b> Profit % = (Selling − Cost) / Cost × 100</div>
+<div class="rule">Allowed: <code>input()</code>, <code>print()</code>, variables, <code>int()</code>, <code>float()</code> and arithmetic operators. No if-else, loops or functions.</div>
+<button onclick="toggle(this)">Show Solution</button><div class="sol"><pre><code>cost = float(input("Enter cost price: "))
+selling = float(input("Enter selling price: "))
+profit = selling - cost
+profit_percent = (profit / cost) * 100
+print("Profit: ₹", profit)
+print("Profit Percentage:", profit_percent, "%")</code></pre></div>
+</section><section class="task">
+<div class="n">Assignment 19</div><h2>Loan EMI Practice</h2>
+<p><b>Business Problem:</b> Take principal, annual interest rate and tenure in years. Calculate an approximate simple monthly payment using simple interest for beginner practice.</p>
+<div class="formula"><b>Formula / Logic:</b> Interest = P × R × T / 100; Monthly = (P + Interest) / (12 × T)</div>
+<div class="rule">Allowed: <code>input()</code>, <code>print()</code>, variables, <code>int()</code>, <code>float()</code> and arithmetic operators. No if-else, loops or functions.</div>
+<button onclick="toggle(this)">Show Solution</button><div class="sol"><pre><code>p = float(input("Enter loan amount: "))
+r = float(input("Enter annual interest rate: "))
+t = float(input("Enter tenure in years: "))
+interest = p * r * t / 100
+total = p + interest
+monthly = total / (12 * t)
+print("Total Repayment: ₹", total)
+print("Approx. Monthly Payment: ₹", monthly)</code></pre></div>
+</section><section class="task">
+<div class="n">Assignment 20</div><h2>Event Ticket Revenue</h2>
+<p><b>Business Problem:</b> Take ticket price, number of tickets and event expense. Calculate revenue and balance.</p>
+<div class="formula"><b>Formula / Logic:</b> Revenue = Ticket Price × Tickets; Balance = Revenue − Expense</div>
+<div class="rule">Allowed: <code>input()</code>, <code>print()</code>, variables, <code>int()</code>, <code>float()</code> and arithmetic operators. No if-else, loops or functions.</div>
+<button onclick="toggle(this)">Show Solution</button><div class="sol"><pre><code>ticket_price = float(input("Enter ticket price: "))
+tickets = int(input("Enter number of tickets sold: "))
+expense = float(input("Enter event expense: "))
+revenue = ticket_price * tickets
+balance = revenue - expense
+print("Revenue: ₹", revenue)
+print("Revenue minus Expense: ₹", balance)</code></pre></div>
+</section></main><footer>Python Beginner Business Practice • 20 Assignments</footer><script>function toggle(b){let s=b.nextElementSibling,o=s.style.display==="block";s.style.display=o?"none":"block";b.textContent=o?"Show Solution":"Hide Solution"}</script></body></html>
